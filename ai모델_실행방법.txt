@@ -1,0 +1,131 @@
+# AI 모델 안내 - 화재·연기 6종 모델의 데이터 준비, 학습, 평가 및 서버 실행 방법
+
+[학습 모델 6종]
+CNN, MobileNetV2, CRNN, RandomForest, LightGBM, XGBoost
+
+[필수 데이터 구조]
+프로젝트\
+  ai_model\
+  ai_server\
+  raw\
+    dfire\
+      train\images
+      train\labels
+      test\images
+      test\labels
+    aihub_clean\
+      images
+      labels
+
+[1. PowerShell에서 프로젝트 폴더로 이동]
+cd D:\datasets
+
+[2. 최초 설치 및 데이터 검사]
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\setup.ps1
+
+이미 설치가 끝난 경우 데이터만 검사:
+.\setup_data.ps1
+
+정상 출력 예시:
+데이터 준비 완료: D-Fire 이미지 21527, AI Hub 이미지/라벨 15392쌍
+
+[3. 가상환경 활성화]
+& .\ai_model\.venv\Scripts\Activate.ps1
+
+[4. 6종 기본 학습 및 전처리]
+python .\ai_model\src\train_all.py `
+  --data-root .\raw `
+  --output .\ai_model\results_v2 `
+  --image-size 160 `
+  --epochs 10 `
+  --hard-negative-epochs 2 `
+  --batch-size 64
+
+주의: 이미 학습 프로세스가 실행 중이면 위 명령을 다시 실행하지 않습니다.
+
+[5. 학습 진행 확인]
+Get-Content .\ai_model\results_v2\training.log -Tail 20 -Wait
+
+복구 학습 로그를 사용하는 경우:
+Get-Content .\ai_model\results_v2\recovery2.log -Tail 20 -Wait
+
+로그 화면 종료: Ctrl+C
+로그 화면만 종료되며 백그라운드 학습은 계속됩니다.
+
+[6. 기본 학습 완료 확인]
+Test-Path .\ai_model\results_v2\metrics.json
+Get-ChildItem .\ai_model\results_v2\models
+
+metrics.json이 True이고 모델 파일 6개가 있어야 완료입니다.
+
+[7. 추가 성능 개선]
+python .\ai_model\src\optimize_all.py `
+  --source .\ai_model\results_v2 `
+  --output .\ai_model\results_optimized `
+  --epochs 15 `
+  --batch-size 32
+
+[8. 최종 성능표 확인]
+Import-Csv .\ai_model\results_optimized\model_comparison.csv | `
+  Format-Table model,f1_micro,precision_micro,recall_micro,smoke_f1,fire_f1,smoke_threshold,fire_threshold -AutoSize
+
+[9. 최종 그래프 생성]
+python .\ai_model\src\generate_reports.py `
+  --results .\ai_model\results_optimized
+
+그래프 위치:
+.\ai_model\results_optimized\reports\model_comparison.png
+.\ai_model\results_optimized\reports\*_confusion_matrix.png
+
+[10. 이미지 한 장 예측]
+python .\ai_model\src\predict.py `
+  ".\raw\dfire\test\images\AoF06754.jpg" `
+  --model random_forest `
+  --models-dir .\ai_model\results_optimized\models
+
+--model에 사용할 수 있는 이름:
+cnn, mobilenet_v2, crnn, random_forest, lightgbm, xgboost
+
+[11. API 서버 실행]
+python -m ai_server.run
+
+브라우저에서 접속:
+http://127.0.0.1:8000/docs
+
+서버 종료: Ctrl+C
+
+[12. 실시간 프레임 버퍼 탐지 및 이벤트 저장]
+웹캠 실행:
+python -m ai_server.realtime_detector --source 0 --model random_forest --display
+
+RTSP 카메라 실행:
+python -m ai_server.realtime_detector `
+  --source "rtsp://아이디:비밀번호@카메라주소/stream" `
+  --model random_forest `
+  --buffer-seconds 5 `
+  --post-seconds 5 `
+  --display
+
+영상 파일 시험:
+python -m ai_server.realtime_detector `
+  --source ".\sample.mp4" `
+  --model random_forest
+
+탐지 이벤트 저장 위치:
+.\ai_server\events\날짜_시간\event.mp4
+.\ai_server\events\날짜_시간\first_detection.jpg
+.\ai_server\events\날짜_시간\detections.jsonl
+.\ai_server\events\날짜_시간\summary.json
+
+기본 설정은 탐지 전 5초와 마지막 탐지 후 5초까지 저장합니다.
+
+[결과 폴더 구분]
+results           : 처음 완료된 기존 6종 모델(복구용)
+results_v2        : AI Hub 추가 및 개선 설정으로 재학습한 중간 결과
+results_optimized : 검증 성능을 기준으로 선택한 최종 결과
+
+[GitHub와 데이터 공유]
+GitHub에는 ai_model, ai_server, 설정 및 최종 모델을 업로드합니다.
+raw 폴더는 압축해 별도로 공유하고, 받은 사람이 프로젝트 최상위에 압축 해제합니다.
+.venv, 학습 캐시, AI Hub 전체 원본은 GitHub에 업로드하지 않습니다.

@@ -1,0 +1,24 @@
+# 데이터 배치 안내 - Discord에서 받은 압축파일을 저장소 raw 폴더에 해제
+
+필수 구조
+raw/
+  dfire/
+    train/images
+    train/labels
+    test/images
+    test/labels
+  aihub_clean/
+    images
+    labels
+
+확인 명령
+powershell -ExecutionPolicy Bypass -File .\setup_data.ps1
+
+처음 설치
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+
+서버 실행
+.\ai_model\.venv\Scripts\python.exe -m ai_server.run
+
+API 화면
+http://127.0.0.1:8000/docs

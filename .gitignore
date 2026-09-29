@@ -1,11 +1,24 @@
-# GitHub 업로드 - 데이터셋, 실행 캐시, 가상환경 및 임시 학습 파일 제외
+# 압축 파일
+*.zip
+*.zip.part*
+
+# 생성된 데이터셋/캐시
+ai_model/results_yolo_smoke/
+ai_model/results_final_6models/cache/
+
+# NumPy 캐시
+*.npy
+
+# 학습 로그
+*.log
+
+# 기존 설정
 raw/
 ai_dataset_archive/
 ai_model/.venv/
 **/__pycache__/
 *.py[cod]
 
-# 학습 중간 산출물은 제외하고 최종 results_optimized 결과만 업로드
 ai_model/results/
 ai_model/results_v2/
 ai_model/results_optimized/cache/
@@ -15,13 +28,11 @@ ai_model/results_final/training*.log
 ai_model/backups/
 ai_server/events/
 
-# 편집기와 운영체제 임시 파일
 .vscode/
 .idea/
 Thumbs.db
 .DS_Store
 
-# 인증 정보
 .env
 *.key
 *api_key*

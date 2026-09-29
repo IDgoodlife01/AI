@@ -1,0 +1,1290 @@
+{
+  "original": {
+    "train": 27508,
+    "val": 4324,
+    "test": 5087
+  },
+  "cleaned": {
+    "train": 27253,
+    "val": 4324,
+    "test": 5087
+  },
+  "removed_count": 255,
+  "removed": [
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Flame\\실외-야간-불\\0008\\0008_F1675.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Flame\\실외-야간-불\\0008\\0008_F1674.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0006.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0005.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0012.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0011.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0018.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0017.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0024.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0023.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0030.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0029.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0036.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0035.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0042.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0041.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0048.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0047.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0054.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0053.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0060.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0059.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0066.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0065.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0072.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0071.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0078.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0077.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0084.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0083.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0090.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0089.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0096.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0095.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0102.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0101.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0108.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0107.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0114.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0113.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0120.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0119.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0126.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0125.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0132.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0131.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0138.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0137.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0144.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0143.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0150.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0149.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0156.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0155.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0162.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0161.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0168.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0167.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0174.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0173.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0180.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0179.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0186.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0185.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0192.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0191.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0198.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0197.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0204.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0203.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0210.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0209.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0216.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0215.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0222.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0221.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0228.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0227.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0234.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0233.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0240.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0239.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0246.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0245.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0252.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0251.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0258.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0257.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0264.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0263.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0270.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0269.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0276.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0275.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0282.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0281.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0288.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0287.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0294.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0293.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0300.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0299.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0306.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0305.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0312.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0311.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0318.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0317.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0324.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0323.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0330.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0329.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0336.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0335.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0342.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0341.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0348.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0347.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0354.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0353.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0360.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0359.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0366.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0365.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0372.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0371.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0378.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0377.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0384.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0383.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0390.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0389.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0396.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0395.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0402.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0401.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0408.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0407.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0414.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0413.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0420.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0419.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0426.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0425.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0432.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0431.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0438.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0437.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0444.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0443.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0450.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0449.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0456.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0455.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0462.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0461.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0468.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0467.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0474.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0473.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0480.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0479.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0486.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0485.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0492.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0491.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0498.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0497.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0504.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0503.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0510.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0509.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0516.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0515.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0522.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0521.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0528.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0527.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0534.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0533.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0540.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0539.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0546.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0545.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0552.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0551.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0558.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0557.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0564.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0563.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0570.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0569.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0576.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0575.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0582.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0581.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0588.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0587.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0594.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0593.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0600.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0599.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0606.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0605.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0612.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0611.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0618.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0617.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0624.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0623.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0630.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0629.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0636.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0635.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0642.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0641.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0648.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0647.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0654.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0653.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0660.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0659.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0666.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0665.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0672.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0671.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0678.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0677.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0684.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0683.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0690.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0689.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0696.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0695.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0702.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0701.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0709.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0708.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0715.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0714.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0721.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0720.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0727.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0726.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0733.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0732.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0739.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0738.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0745.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0744.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0751.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0750.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0757.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0756.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0763.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0762.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0769.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0768.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0775.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0774.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0781.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0780.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0787.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0786.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0793.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0792.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0799.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0798.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0805.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0804.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0811.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0810.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0817.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0816.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0823.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0822.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0829.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0828.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0835.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0834.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0841.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0840.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0847.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0846.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0853.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0852.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0859.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0858.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0865.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0864.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0871.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0870.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0877.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0876.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0883.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0882.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0889.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0888.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0895.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0894.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0901.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0900.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0907.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0906.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0913.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0912.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0919.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0918.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0925.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0924.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0931.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0930.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0937.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0936.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0943.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0942.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0949.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0948.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0955.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0954.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0961.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0960.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0967.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0966.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0973.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0972.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0979.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0978.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0985.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0984.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0991.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0990.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0997.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F0996.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1003.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1002.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1009.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1008.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1015.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1014.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1021.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1020.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1027.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1026.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1033.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1032.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1039.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1038.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1045.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1044.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1051.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1050.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1057.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1056.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1063.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1062.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1069.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1068.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1075.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1074.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1081.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1080.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1087.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1086.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1093.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1092.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1099.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1098.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1105.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1104.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1111.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1110.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1117.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1116.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1123.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1122.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1129.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1128.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1135.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1134.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1141.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1140.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1147.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1146.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1153.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1152.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1159.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1158.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1165.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1164.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1175.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1174.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1181.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1180.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1187.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1186.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1193.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1192.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1199.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1198.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1205.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1204.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1211.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1210.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1217.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1216.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1223.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1222.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1229.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1228.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1235.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1234.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1241.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1240.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1247.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1246.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1253.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1252.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1259.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1258.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1265.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1264.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1271.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1270.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1277.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1276.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1283.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1282.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1289.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1288.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1295.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1294.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1301.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1300.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1307.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1306.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1313.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1312.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1319.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1318.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1325.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1324.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1331.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1330.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1337.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1336.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1343.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1342.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1349.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1348.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1355.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1354.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1361.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1360.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1367.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1366.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1373.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1372.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1379.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1378.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1385.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1384.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1391.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1390.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1397.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1396.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1403.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1402.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1409.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1408.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1415.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1414.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1421.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1420.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1427.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1426.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1433.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1432.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1439.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1438.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1445.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1444.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1451.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1450.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1457.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1456.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1463.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1462.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1469.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1468.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1475.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1474.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1481.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1480.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1487.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1486.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1493.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1492.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1499.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1498.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1505.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1504.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1511.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1510.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1517.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0016\\0016_F1516.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0019\\0019_F0115.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0019\\0019_F0114.jpg"
+    },
+    {
+      "image": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0020\\0020_F2117.jpg",
+      "reason": "exact_duplicate",
+      "kept": "D:\\datasets\\raw\\aihub_clean\\images\\화재영상 이미지데이터\\Smoke\\실외-주간-연기\\0020\\0020_F2116.jpg"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# GitHub 업로드 - 최종 학습 모델은 Git LFS로 저장
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text

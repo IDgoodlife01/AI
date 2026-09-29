@@ -1,0 +1,80 @@
+[
+  {
+    "subset_accuracy": 0.8352663652447415,
+    "precision_micro": 0.8901660280970626,
+    "recall_micro": 0.8762886597938144,
+    "f1_micro": 0.8831728332488596,
+    "smoke_f1": 0.8928571428571429,
+    "fire_f1": 0.8684546615581098,
+    "smoke_threshold": 0.44999998807907104,
+    "fire_threshold": 0.6299999952316284,
+    "model": "random_forest",
+    "seconds": 10.07,
+    "artifact": "D:\\datasets\\ai_model\\results_v2\\models\\random_forest.joblib"
+  },
+  {
+    "subset_accuracy": 0.8014546884214665,
+    "precision_micro": 0.8647894469812278,
+    "recall_micro": 0.8571787779733467,
+    "f1_micro": 0.8609672938502336,
+    "smoke_f1": 0.8316491077187702,
+    "fire_f1": 0.9026927784577723,
+    "smoke_threshold": 0.44999998807907104,
+    "fire_threshold": 0.9300000071525574,
+    "model": "mobilenet_v2",
+    "seconds": 69.699,
+    "artifact": "D:\\datasets\\ai_model\\results_v2\\models\\mobilenet_v2.pt"
+  },
+  {
+    "subset_accuracy": 0.7967367800275211,
+    "precision_micro": 0.8484922775189998,
+    "recall_micro": 0.8702539602715614,
+    "f1_micro": 0.8592353525322741,
+    "smoke_f1": 0.8519959058341863,
+    "fire_f1": 0.8703878902554399,
+    "smoke_threshold": 0.3400000035762787,
+    "fire_threshold": 0.5699999928474426,
+    "model": "xgboost",
+    "seconds": 11.973,
+    "artifact": "D:\\datasets\\ai_model\\results_v2\\models\\xgboost.joblib"
+  },
+  {
+    "subset_accuracy": 0.7937880872813053,
+    "precision_micro": 0.8560625157549786,
+    "recall_micro": 0.853909982398793,
+    "f1_micro": 0.8549848942598187,
+    "smoke_f1": 0.8494176372712147,
+    "fire_f1": 0.8635204081632653,
+    "smoke_threshold": 0.3700000047683716,
+    "fire_threshold": 0.6100000143051147,
+    "model": "lightgbm",
+    "seconds": 5.824,
+    "artifact": "D:\\datasets\\ai_model\\results_v2\\models\\lightgbm.joblib"
+  },
+  {
+    "subset_accuracy": 0.5970119913505013,
+    "precision_micro": 0.6704721362229102,
+    "recall_micro": 0.8712597435252704,
+    "f1_micro": 0.7577911427009295,
+    "smoke_f1": 0.71183442419954,
+    "fire_f1": 0.8321878579610539,
+    "smoke_threshold": 0.27000001072883606,
+    "fire_threshold": 0.49000000953674316,
+    "model": "crnn",
+    "seconds": 666.217,
+    "artifact": "D:\\datasets\\ai_model\\results_v2\\models\\crnn.pt"
+  },
+  {
+    "subset_accuracy": 0.5669353253390996,
+    "precision_micro": 0.6376649934932144,
+    "recall_micro": 0.8624591400553181,
+    "f1_micro": 0.7332193244976486,
+    "smoke_f1": 0.6943111720356409,
+    "fire_f1": 0.7977272727272727,
+    "smoke_threshold": 0.33000001311302185,
+    "fire_threshold": 0.3799999952316284,
+    "model": "cnn",
+    "seconds": 37.245,
+    "artifact": "D:\\datasets\\ai_model\\results_v2\\models\\cnn.pt"
+  }
+]
