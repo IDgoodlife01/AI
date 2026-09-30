@@ -17,7 +17,7 @@ def health():
 @app.post("/predict")
 async def predict_image(
     image: UploadFile = File(...),
-    model: str = Form("random_forest"),
+    model: str = Form("yolo"),
     threshold: float | None = Form(None),
 ):
     if model not in AVAILABLE_MODELS:

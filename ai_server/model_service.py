@@ -69,14 +69,24 @@ def load_model(model_name: str):
 def predict(image_bytes: bytes, model_name: str, threshold: float | None):
     with Image.open(io.BytesIO(image_bytes)) as source:
         image = source.convert("RGB")
+        boxes = []
         if model_name in YOLO_MODELS:
             bundle = load_model(model_name)
             probabilities = np.zeros(2, dtype=np.float32)
             result = bundle["model"].predict(image, imgsz=bundle["image_size"], verbose=False)[0]
             if result.boxes is not None:
-                for class_id, confidence in zip(result.boxes.cls.cpu().numpy().astype(int), result.boxes.conf.cpu().numpy()):
+                for xyxy, class_id, confidence in zip(
+                    result.boxes.xyxy.cpu().numpy(),
+                    result.boxes.cls.cpu().numpy().astype(int),
+                    result.boxes.conf.cpu().numpy(),
+                ):
                     if class_id in (0, 1):
                         probabilities[class_id] = max(probabilities[class_id], float(confidence))
+                        boxes.append({
+                            "label": LABEL_NAMES[class_id],
+                            "confidence": round(float(confidence), 6),
+                            "xyxy": [round(float(value), 2) for value in xyxy],
+                        })
         elif model_name in DEEP_MODELS:
             bundle = load_model(model_name)
             transform = transforms.Compose(
@@ -104,6 +114,7 @@ def predict(image_bytes: bytes, model_name: str, threshold: float | None):
         "thresholds": {name: round(float(value), 6) for name, value in zip(LABEL_NAMES, thresholds)},
         "probabilities": {name: round(float(value), 6) for name, value in zip(LABEL_NAMES, probabilities)},
         "detected": [name for name, value, cutoff in zip(LABEL_NAMES, probabilities, thresholds) if value >= cutoff],
+        "boxes": boxes,
     }
 
 
