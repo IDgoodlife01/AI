@@ -1,2 +1,1 @@
-# AI service module - video buffering and fire event persistence
-
+# AI 서비스 모듈 - 영상 버퍼링 및 화재 이벤트 저장

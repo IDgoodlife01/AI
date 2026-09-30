@@ -1,4 +1,4 @@
-# AI model module - load six trained models and run image inference
+# AI 모델 모듈 - 학습된 모델 6종 로딩 및 이미지 추론
 from __future__ import annotations
 
 import io

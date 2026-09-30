@@ -1,2 +1,1 @@
-# AI application package - FastAPI, model inference, and event processing
-
+# AI 애플리케이션 패키지 - FastAPI, 모델 추론 및 이벤트 처리

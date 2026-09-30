@@ -1,4 +1,4 @@
-# AI server entrypoint - health check, inference, and confirmed-event snapshot API
+# AI 서버 진입점 - 상태 확인, 추론 및 확정 이벤트 스냅샷 API
 import json
 
 import cv2

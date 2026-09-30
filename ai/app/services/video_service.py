@@ -1,4 +1,4 @@
-# AI video service - frame buffering, inference, and confirmed-event creation
+# AI 영상 서비스 - 프레임 버퍼링, 추론 및 확정 이벤트 생성
 from __future__ import annotations
 
 from collections import deque
@@ -35,4 +35,3 @@ def process_video(source: str | int, model: str = "yolo", threshold: float | Non
     finally:
         capture.release()
     return events
-

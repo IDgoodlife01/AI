@@ -1,4 +1,4 @@
-# AI deploy package - Python runtime dependencies
+# AI 배포 패키지 - Python 실행 의존성
 fastapi>=0.116
 uvicorn>=0.35
 python-multipart>=0.0.20

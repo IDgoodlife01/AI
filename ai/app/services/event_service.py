@@ -1,4 +1,4 @@
-# AI event service - save confirmed-event JPG snapshots and MP4 clips
+# AI 이벤트 서비스 - 확정 이벤트 JPG 스냅샷 및 MP4 영상 저장
 from __future__ import annotations
 
 import json

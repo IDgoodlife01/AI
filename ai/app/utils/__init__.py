@@ -1,2 +1,1 @@
-# AI utility module - shared helpers
-
+# AI 유틸리티 모듈 - 공통 보조 기능
