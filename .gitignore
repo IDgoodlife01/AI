@@ -1,38 +1,22 @@
-# 압축 파일
-*.zip
-*.zip.part*
+# GitHub 업로드 - 최종 AI 배포 폴더만 허용
+/*
 
-# 생성된 데이터셋/캐시
-ai_model/results_yolo_smoke/
-ai_model/results_final_6models/cache/
+# 저장소 설정 파일
+!/.gitignore
+!/.gitattributes
 
-# NumPy 캐시
-*.npy
+# 팀에 전달할 최종 AI 서버·모델 패키지
+!/ai/
+!/ai/**
 
-# 학습 로그
-*.log
+# ai 내부에서도 로컬 환경과 실행 산출물 제외
+/ai/.venv/
+/ai/**/__pycache__/
+/ai/**/*.py[cod]
+/ai/.env
+/ai/storage/events/*
+!/ai/storage/events/.gitkeep
 
-# 기존 설정
-raw/
-ai_dataset_archive/
-ai_model/.venv/
-**/__pycache__/
-*.py[cod]
-
-ai_model/results/
-ai_model/results_v2/
-ai_model/results_optimized/cache/
-ai_model/results_optimized/training*.log
-ai_model/results_optimized/*.pid
-ai_model/results_final/training*.log
-ai_model/backups/
-ai_server/events/
-
-.vscode/
-.idea/
-Thumbs.db
-.DS_Store
-
-.env
-*.key
-*api_key*
+# 로컬 백업 모델은 업로드하지 않음
+/ai/model/*_before_*.pt
+/ai/model/*_backup.pt

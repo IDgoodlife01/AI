@@ -69,14 +69,21 @@ def predict_paths(artifact: Path, paths: list[Path], image_size: int = 640) -> n
 
     model = YOLO(str(artifact))
     probabilities = np.zeros((len(paths), 2), dtype=np.float32)
-    for index, result in enumerate(model.predict([str(path) for path in paths], imgsz=image_size,
-                                                  verbose=False, stream=True)):
-        if result.boxes is None:
-            continue
-        for class_id, confidence in zip(result.boxes.cls.cpu().numpy().astype(int),
-                                        result.boxes.conf.cpu().numpy()):
-            if class_id in (0, 1):
-                probabilities[index, class_id] = max(probabilities[index, class_id], float(confidence))
+    batch_size = 64
+    for start in range(0, len(paths), batch_size):
+        batch = paths[start:start + batch_size]
+        results = model.predict([str(path) for path in batch], imgsz=image_size,
+                                verbose=False, stream=True)
+        for offset, result in enumerate(results):
+            if result.boxes is None:
+                continue
+            index = start + offset
+            for class_id, confidence in zip(result.boxes.cls.cpu().numpy().astype(int),
+                                            result.boxes.conf.cpu().numpy()):
+                if class_id in (0, 1):
+                    probabilities[index, class_id] = max(
+                        probabilities[index, class_id], float(confidence)
+                    )
     return probabilities
 
 
@@ -87,11 +94,26 @@ def train_yolo(splits, data_root: Path, output: Path, epochs: int, image_size: i
     dataset_dir = output / "yolo_dataset"
     yaml_path = prepare_dataset(splits, data_root, dataset_dir)
     started = time.perf_counter()
-    base = "yolo11n.pt" if smoke_test else "yolo11s.pt"
+    base = "yolo11n.pt"
     model = YOLO(base)
-    run = model.train(data=str(yaml_path), epochs=max(1, epochs), imgsz=image_size,
-                      batch=batch_size, seed=seed, patience=3, project=str(output / "yolo_runs"),
-                      name="fire_smoke", exist_ok=True, pretrained=True, verbose=True)
+    run = model.train(
+        data=str(yaml_path),
+        epochs=max(1, epochs),
+        imgsz=image_size,
+        batch=batch_size,
+        seed=seed,
+        patience=15,
+        optimizer="AdamW",
+        lr0=0.001,
+        cos_lr=True,
+        close_mosaic=10,
+        project=str(output / "yolo_runs"),
+        name="fire_smoke",
+        exist_ok=True,
+        pretrained=True,
+        plots=True,
+        verbose=True,
+    )
     best = Path(run.save_dir) / "weights" / "best.pt"
     artifact = output / "models" / "yolo.pt"
     shutil.copy2(best, artifact)

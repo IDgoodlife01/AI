@@ -1,0 +1,93 @@
+# AI 팀 
+
+1. 담당 범위
+- 화재·연기 데이터 전처리
+- AI 모델 6종 학습·평가
+- YOLO11n 바운딩박스 객체탐지
+- FastAPI AI 서버와 백엔드 연동용 API
+- 확정 이벤트 JPG 및 전후 영상 MP4 저장 구조
+
+2. 팀 프로젝트 배치 구조
+팀프로젝트\
+  ai\
+    app\
+      main.py                 FastAPI 서버 진입점
+      models\inference.py    모델 로딩·이미지 추론
+      services\video_service.py  영상·프레임 버퍼 처리
+      services\event_service.py 이벤트 스냅샷 저장
+    model\
+      yolo.pt                 최종 YOLO11n 객체탐지 모델
+      cnn.pt
+      mobilenet_v2.pt
+      random_forest.joblib
+      lightgbm.joblib
+      xgboost.joblib
+    storage\events\          확정 이벤트 JPG·MP4 저장
+    requirements.txt
+    AI_SERVER_AND_MODEL_TRAINING.txt
+
+3. AI 서버 최초 설치
+cd 팀프로젝트\ai
+py -3.11 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+4. AI 서버 실행
+cd 팀프로젝트\ai
+.\.venv\Scripts\Activate.ps1
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+5. 서버 확인
+- 상태: http://127.0.0.1:8000/health
+- Swagger: http://127.0.0.1:8000/docs
+- /health가 status=ok이고 모델 6종이 모두 true이면 정상
+- /predict에 JPG 또는 PNG를 넣고 model=yolo로 실행
+- 응답의 detected는 탐지 클래스, probabilities는 확률, boxes는 바운딩박스 좌표
+- /events/confirm은 이벤트 확정 시 JPG 스냅샷 저장
+
+6. 재학습이 필요한 경우 전달할 폴더
+팀프로젝트\
+  ai_model\   학습 코드
+  raw\        학습 데이터
+
+- 원본 PC 위치: D:\datasets\ai_model, D:\datasets\raw
+- raw\dfire\train\images와 labels는 YOLO 학습 데이터
+- raw\dfire\test는 독립 Test 데이터
+- raw\aihub_clean\images와 labels는 정제된 AI Hub 데이터
+- 데이터 검사: 프로젝트 루트에서 .\setup_data.ps1 실행
+
+7. 학습 환경 설치
+cd 팀프로젝트\ai_model
+py -3.11 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+8. YOLO11n 단독 100 epoch 학습
+python .\src\train_yolo11n.py --data-root ..\raw --output .\results_yolo11n_final --epochs 100 --batch-size 16 --image-size 640 --seed 42
+
+9. 모델 6종 전체 학습
+python .\src\train_all.py --data-root ..\raw --output .\results_final_6models --epochs 10 --batch-size 32 --image-size 224 --yolo-image-size 640 --seed 42
+
+10. 최종 YOLO 적용
+- 독립 Test 결과가 기존 모델보다 좋은지 확인
+- 기존 ai\model\yolo.pt를 yolo_before_update.pt로 백업
+- 새 best.pt를 ai\model\yolo.pt라는 이름으로 복사
+- 서버 재시작 후 /health와 /predict 확인
+
+13. 현재 확인된 상태
+- 모델 6종 파일 존재
+- AI 서버 상태 확인 결과 status=ok
+- YOLO 클래스: smoke, fire
+- 기존 비교 결과에서 YOLO11n F1 Micro: 0.912425
+- 전체 데이터 100 epoch 학습 모델은 완료 후 별도 Test 검증을 거쳐 기존 모델보다 좋을 때만 교체
+
+14. 백엔드 팀 전달 내용
+- AI 서버 기본 주소: http://AI서버주소:8000
+- 상태 확인: GET /health
+- 이미지 탐지: POST /predict
+- 이벤트 확정 스냅샷: POST /events/confirm
+- Swagger 명세: /docs

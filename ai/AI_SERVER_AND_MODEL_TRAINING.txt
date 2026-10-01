@@ -1,0 +1,155 @@
+# AI 서버 및 모델 학습 - VS Code 실행 안내
+
+[폴더 역할]
+- D:\datasets\ai : 학습 완료 모델을 사용하는 AI 서버
+- D:\datasets\ai\app : FastAPI 서버, 모델 로딩·추론, 이벤트 처리 코드
+- D:\datasets\ai\model : 서버에서 사용하는 최종 .pt/.joblib 모델
+- D:\datasets\ai\storage\events : 확정 이벤트 JPG·MP4 저장 위치
+- D:\datasets\ai_model : 모델 학습 코드와 학습 결과
+- D:\datasets\raw : D-Fire·AI Hub 원본/정제 데이터
+
+[팀 프로젝트에 파일 넣는 위치]
+- 팀 GitHub 저장소의 최상위 폴더 아래에 ai 폴더 전체를 넣음
+- 예시: 팀프로젝트\ai\app\main.py
+- AI 서버 진입점: ai\app\main.py
+- 모델 로딩·추론 코드: ai\app\models\inference.py
+- 영상 처리 코드: ai\app\services\video_service.py
+- 이벤트·스냅샷 처리 코드: ai\app\services\event_service.py
+- 최종 YOLO 모델: ai\model\yolo.pt
+- 분류 모델: ai\model\cnn.pt, mobilenet_v2.pt
+- 머신러닝 모델: ai\model\random_forest.joblib, lightgbm.joblib, xgboost.joblib
+- 이벤트 저장 폴더: ai\storage\events
+- 설치 목록: ai\requirements.txt
+
+[Colab 학습 완료 후 팀원이 할 일]
+1. Google Drive의 results_6models_clean\models\yolo.pt를 다운로드
+2. 팀 프로젝트의 ai\model\yolo.pt에 넣음
+3. 기존 모델을 보존하려면 먼저 ai\model\yolo_before_update.pt로 복사
+4. ai 폴더에서 서버를 실행하고 /health와 /predict를 확인
+
+[GitHub 업로드 범위]
+- 업로드: ai\app, ai\model, ai\storage\events\.gitkeep, ai\requirements.txt, 이 안내 파일
+- 업로드 제외: .venv, __pycache__, 학습 원본 데이터, 캐시, 실행 중 생성된 JPG·MP4
+- raw 데이터와 ai_model 학습 결과 전체는 용량이 크므로 배포용 ai 폴더 안에 넣지 않음
+- 재학습이 필요한 팀원에게만 D:\datasets\ai_model 학습 코드와 D:\datasets\raw 데이터 위치를 별도로 전달
+
+[학습 코드와 데이터 전달 위치]
+- 팀원이 재학습할 경우 프로젝트 최상위에 ai_model과 raw를 ai 폴더와 나란히 배치
+- 팀프로젝트\ai : 배포·추론 서버
+- 팀프로젝트\ai_model : 학습 코드
+- 팀프로젝트\raw : 학습 데이터
+- Windows 예시 루트: D:\datasets
+
+[ai_model 학습 코드]
+- ai_model\src\train_all.py : CNN, MobileNetV2, YOLO11n, RandomForest, LightGBM, XGBoost 6종 학습·평가
+- ai_model\src\train_yolo11n.py : YOLO11n 단독 학습
+- ai_model\src\yolo_model.py : YOLO 데이터 구성·학습 로직
+- ai_model\src\generate_reports.py : 비교 그래프·혼동행렬 생성
+- ai_model\src\predict.py : 저장 모델 추론
+- ai_model\requirements.txt : 학습용 Python 패키지 목록
+
+[raw 학습 데이터 구조]
+raw\
+  dfire\
+    train\images\   : D-Fire 학습 이미지
+    train\labels\   : 이미지와 같은 이름의 YOLO TXT 바운딩박스 라벨
+    test\images\    : 독립 Test 이미지
+    test\labels\    : 독립 Test YOLO 라벨
+  aihub_clean\
+    images\          : 정제된 AI Hub 이미지
+    labels\          : 이미지와 같은 이름의 YOLO TXT 바운딩박스 라벨
+  videos\            : 영상 추론·시연용 영상
+  video_validation\ : 외부 영상 검증 자료
+
+[팀원 PC 학습 환경 설치]
+1. Python 3.11 이상과 VS Code를 설치
+2. 전달받은 ai_model 폴더와 raw 폴더를 같은 프로젝트 루트에 배치
+3. VS Code에서 프로젝트 루트를 열고 PowerShell 터미널 실행
+4. 아래 명령 실행
+
+cd D:\datasets\ai_model
+py -3.11 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+[데이터 설치·검사]
+- 데이터 압축은 D:\datasets\raw 안에 풀어 위 구조가 되게 함
+- D:\datasets\raw\raw처럼 raw 폴더가 두 번 중첩되면 안 됨
+- 데이터 확인 명령
+cd D:\datasets
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\setup_data.ps1
+- "데이터 준비 완료"가 나오면 학습 가능
+
+[GPU 확인]
+cd D:\datasets\ai_model
+.\.venv\Scripts\Activate.ps1
+python -c "import torch; print('CUDA:', torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')"
+- CUDA가 False이면 CPU로 실행되어 학습 시간이 매우 길어질 수 있음
+
+[1. AI 서버 최초 설치 - PowerShell]
+cd D:\datasets\ai
+py -3.11 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+[2. AI 서버 실행]
+cd D:\datasets\ai
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+[3. 서버 확인]
+- 상태 확인: http://127.0.0.1:8000/health
+- Swagger 테스트: http://127.0.0.1:8000/docs
+- /health 결과가 status=ok이고 모델 6종이 true이면 정상
+- /predict에서 image를 선택하고 model=yolo로 실행하면 boxes에 바운딩박스 좌표가 표시됨
+
+[4. 학습 환경 최초 설치 - PowerShell]
+cd D:\datasets\ai_model
+py -3.11 -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+[5. 데이터 배치 확인]
+- YOLO 학습에는 이미지와 같은 이름의 바운딩박스 라벨 TXT가 모두 필요함
+- 예시 이미지: D:\datasets\raw\dfire\train\images\001.jpg
+- 예시 라벨: D:\datasets\raw\dfire\train\labels\001.txt
+- Test 데이터는 최종 평가에만 사용하고 학습 또는 threshold 재조정에 사용하지 않음
+
+[6. YOLO11n 빠른 사전 점검]
+cd D:\datasets\ai_model
+.\.venv\Scripts\Activate.ps1
+python .\src\train_yolo11n.py --data-root D:\datasets\raw --output D:\datasets\ai_model\results_yolo_smoke --smoke-test
+
+[7. YOLO11n 전체 100 epoch 학습]
+cd D:\datasets\ai_model
+.\.venv\Scripts\Activate.ps1
+python .\src\train_yolo11n.py --data-root D:\datasets\raw --output D:\datasets\ai_model\results_yolo11n_final --epochs 100 --batch-size 16 --image-size 640 --seed 42
+
+[8. CNN·MobileNetV2·YOLO11n·RandomForest·LightGBM·XGBoost 6종 학습]
+cd D:\datasets\ai_model
+.\.venv\Scripts\Activate.ps1
+python .\src\train_all.py --data-root D:\datasets\raw --output D:\datasets\ai_model\results_final_6models --epochs 10 --batch-size 32 --image-size 224 --yolo-image-size 640 --seed 42
+
+[9. 최종 YOLO 모델 적용]
+- 학습 결과의 metrics.json과 독립 Test 결과를 먼저 확인함
+- 새 모델이 기존 모델보다 좋을 때만 아래 명령으로 교체함
+Copy-Item D:\datasets\ai\model\yolo.pt D:\datasets\ai\model\yolo_before_update.pt
+Copy-Item D:\datasets\ai_model\results_yolo11n_final\models\yolo.pt D:\datasets\ai\model\yolo.pt
+
+[10. 교체 후 확인]
+cd D:\datasets\ai
+.\.venv\Scripts\Activate.ps1
+python -c "from ultralytics import YOLO; m=YOLO(r'D:\datasets\ai\model\yolo.pt'); print(m.names)"
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+[복구]
+- 새 안내 파일만 제거하려면 D:\datasets\ai\AI_SERVER_AND_MODEL_TRAINING.txt를 삭제
+- 모델 교체를 취소하려면 yolo_before_update.pt를 yolo.pt로 다시 복사

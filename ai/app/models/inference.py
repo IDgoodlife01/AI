@@ -92,7 +92,13 @@ def predict(image_bytes: bytes, model_name: str = "yolo", threshold: float | Non
         if model_name in YOLO_MODELS:
             bundle = load_model(model_name)
             probabilities = np.zeros(2, dtype=np.float32)
-            result = bundle["model"].predict(image, imgsz=bundle["image_size"], verbose=False)[0]
+            confidence = threshold if threshold is not None else min(bundle["thresholds"])
+            result = bundle["model"].predict(
+                image,
+                imgsz=bundle["image_size"],
+                conf=float(confidence),
+                verbose=False,
+            )[0]
             if result.boxes is not None:
                 for xyxy, class_id, confidence in zip(
                     result.boxes.xyxy.cpu().numpy(),
